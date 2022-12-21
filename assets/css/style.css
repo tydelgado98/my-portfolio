@@ -10,8 +10,8 @@ body {
 header {
   padding: 40px;
   text-align: center;
-  background: #13293d;
-  color: #fff;
+  background-color: lightslategray;
+  color: black;
 }
 
 /* 
@@ -20,14 +20,21 @@ The flex container becomes flexible
 */
 nav {
   display: flex;
-  background-color: #d8a47f;
+  background-color: powderblue;
 }
 
 nav a {
   color: #13293d;
   padding: 14px 20px;
   text-decoration: none;
-  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+nav a:hover {
+  box-shadow: 0 0 8px 4px black;
+  padding: 2px;
+}
+.card:hover {
+  box-shadow: 0 0 8px 4px black;
 }
 
 /* 
@@ -44,12 +51,17 @@ aside {
   background-color: #b9c6ae;
   padding: 80px;
   text-align: center;
+  margin: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+aside img:hover {
+  box-shadow: 0 0 8px 4px black;
 }
 
 footer {
   padding: 20px;
   text-align: center;
-  background: #13293d;
+  background: lightslategray;
   color: #fff;
 }
 
@@ -72,12 +84,35 @@ It is a shorthand property for the flex-grow, flex-shrink, and flex-basis proper
 What is it doing here?
 We are making the product card not growable, not shrinkable, and with an initial length of 400px 
 */
+.first-card {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 10px;
+  flex: 0 0 1000px;
+  margin: 20px;
+}
+
+.first-card header {
+  padding: 20px;
+}
+
+.first-card p {
+  text-align: center;
+}
+
+.first-card img {
+  width: 90%;
+  padding: 20px;
+}
+
 .card {
   border-style: solid;
   border-width: 1px;
   border-radius: 10px;
   padding: 10px;
   flex: 0 0 400px;
+  margin: 20px;
 }
 
 .card header {
@@ -89,7 +124,16 @@ We are making the product card not growable, not shrinkable, and with an initial
 }
 
 .card img {
-  width: 100%;
+  width: 90%;
+}
+footer a {
+  text-decoration: none;
+  color:black ;
+  font-family: 'Courier New', Courier, monospace;
+}
+footer a:hover {
+  box-shadow: 0 0 8px 4px black;
+ 
 }
 
 /* 
