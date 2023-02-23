@@ -6,6 +6,8 @@
 - I wanted to make a simple but unique layout.
 - I've built this portfolio to show some of my skills on CSS and HTML.
 
+#Link
+https://tydelgado98.github.io/my-portfolio/
 
 ## Installation
 
